@@ -24,6 +24,6 @@ List<OnBoardingModel> onBordingList = [
     title: 'Fast Delivery',
     image: ImageAsset.onBoardingimageFour,
     body:
-        'reliable and Fast Delivery. We Deliver your product the fastest \n way possibile.',
+        'reliable and Fast Delivery. We Deliver \n your product the fastest \n way possibile.',
   ),
 ];
