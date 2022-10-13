@@ -1,10 +1,18 @@
 import 'package:flutter/material.dart';
 
-class onBoarding extends StatelessWidget {
-  const onBoarding({super.key});
+class OnBoarding extends StatelessWidget {
+  const OnBoarding({super.key});
 
   @override
   Widget build(BuildContext context) {
-    return Container();
+    return Scaffold(
+      appBar: AppBar(
+        elevation: 0.0,
+        backgroundColor: Colors.white,
+      ),
+      body: Column(
+        children: const [],
+      ),
+    );
   }
 }
