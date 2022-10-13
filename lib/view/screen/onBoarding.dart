@@ -1,3 +1,5 @@
+// ignore_for_file: file_names
+
 import 'package:flutter/material.dart';
 
 class OnBoarding extends StatelessWidget {
@@ -11,7 +13,11 @@ class OnBoarding extends StatelessWidget {
         backgroundColor: Colors.white,
       ),
       body: Column(
-        children: const [],
+        children: const [
+          Text(''),
+          //Image: Image.asset('assets/images/onBoardingons'),
+          Text(''),
+        ],
       ),
     );
   }
