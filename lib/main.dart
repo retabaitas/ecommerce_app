@@ -1,3 +1,4 @@
+import 'package:ecommerce_app/core/constant/color.dart';
 import 'package:ecommerce_app/view/screen/onBoarding.dart';
 import 'package:flutter/material.dart';
 import 'package:get/get_navigation/src/root/get_material_app.dart';
@@ -12,9 +13,9 @@ class MyApp extends StatelessWidget {
   Widget build(BuildContext context) {
     return GetMaterialApp(
       debugShowCheckedModeBanner: false,
-      title: 'Flutter Demo',
+      title: 'Ecommerce App',
       theme: ThemeData(
-        primarySwatch: Colors.blue,
+        primarySwatch: ColorManager.kprimaryColor,
       ),
       home: const OnBoarding(),
     );
