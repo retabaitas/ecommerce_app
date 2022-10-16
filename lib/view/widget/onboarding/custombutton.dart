@@ -1,8 +1,8 @@
 import 'package:ecommerce_app/core/constant/color.dart';
 import 'package:flutter/material.dart';
 
-class CustimBottum extends StatelessWidget {
-  const CustimBottum({super.key, required this.text, required this.onPressed});
+class CustomBottun extends StatelessWidget {
+  const CustomBottun({super.key, required this.text, required this.onPressed});
   final String text;
   final Function onPressed;
   @override

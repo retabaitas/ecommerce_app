@@ -1,8 +1,8 @@
 import 'package:ecommerce_app/data/datasource/static/static.dart';
 import 'package:flutter/material.dart';
 
-class CustimListView extends StatelessWidget {
-  const CustimListView({super.key});
+class CustomListView extends StatelessWidget {
+  const CustomListView({super.key});
 
   @override
   Widget build(BuildContext context) {

@@ -2,8 +2,8 @@ import 'package:ecommerce_app/core/constant/color.dart';
 import 'package:ecommerce_app/data/datasource/static/static.dart';
 import 'package:flutter/material.dart';
 
-class CustimController extends StatelessWidget {
-  const CustimController({super.key});
+class CustomDotController extends StatelessWidget {
+  const CustomDotController({super.key});
 
   @override
   Widget build(BuildContext context) {
