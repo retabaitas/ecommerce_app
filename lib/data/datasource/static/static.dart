@@ -12,7 +12,7 @@ List<OnBoardingModel> onBordingList = [
     title: 'Easy & Safe Payment',
     image: ImageAsset.onBoardingimageTow,
     body:
-        'Easy Checkout & safe Payment \n method. Trusted by our Customers \n from all over the world.',
+        'Easy Checkout & safe \n Payment method. Trusted by our \n Customers from all over the world.',
   ),
   OnBoardingModel(
     title: 'Track Your Order',
@@ -24,6 +24,6 @@ List<OnBoardingModel> onBordingList = [
     title: 'Fast Delivery',
     image: ImageAsset.onBoardingimageFour,
     body:
-        'reliable and Fast Delivery. We Deliver \n your product the fastest \n way possibile.',
+        'reliable and Fast Delivery. We \n Deliver your product the fastest \n way possibile.',
   ),
 ];
