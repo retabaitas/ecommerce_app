@@ -1,3 +1,4 @@
+import 'package:ecommerce_app/routes.dart';
 import 'package:ecommerce_app/view/screen/onBoarding.dart';
 import 'package:flutter/material.dart';
 import 'package:get/get_navigation/src/root/get_material_app.dart';
@@ -10,10 +11,11 @@ class MyApp extends StatelessWidget {
   const MyApp({super.key});
   @override
   Widget build(BuildContext context) {
-    return const GetMaterialApp(
+    return GetMaterialApp(
       debugShowCheckedModeBanner: false,
       title: 'Ecommerce App',
       home: OnBoarding(),
+      routes: route,
     );
   }
 }

@@ -1,11 +1,14 @@
+import 'package:ecommerce_app/controller/onboarding_controller.dart';
 import 'package:ecommerce_app/core/constant/color.dart';
 import 'package:ecommerce_app/core/constant/value_manager.dart';
 import 'package:flutter/material.dart';
+import 'package:get/get.dart';
 
-class CustomBottun extends StatelessWidget {
-  const CustomBottun({super.key, required this.text, required this.onPressed});
-  final String text;
-  final Function onPressed;
+class CustomBottun extends GetView<onBoardingControllerImp> {
+  const CustomBottun({
+    super.key,
+  });
+
   @override
   Widget build(BuildContext context) {
     return Container(
@@ -21,10 +24,12 @@ class CustomBottun extends StatelessWidget {
       ),
       child: MaterialButton(
         textColor: ColorManager.kwhiteColor,
-        onPressed: onPressed(),
-        child: Text(
-          text,
-          style: const TextStyle(
+        onPressed: () {
+          controller.nex();
+        },
+        child: const Text(
+          'Contuner',
+          style: TextStyle(
             fontSize: AppSize.s18,
           ),
         ),
