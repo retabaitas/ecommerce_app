@@ -1,10 +1,9 @@
 // ignore_for_file: camel_case_types, non_constant_identifier_names
 
+import 'package:ecommerce_app/core/constant/routes.dart';
 import 'package:ecommerce_app/data/datasource/static/static.dart';
-import 'package:ecommerce_app/view/screen/auth/login.dart';
 import 'package:flutter/material.dart';
 import 'package:get/get.dart';
-import 'package:path/path.dart';
 
 abstract class onBoardingController extends GetxController {
   nex();
@@ -18,7 +17,7 @@ class onBoardingControllerImp extends onBoardingController {
   nex() {
     curentPage++;
     if (curentPage > onBordingList.length - 1) {
-      //Navigator.popAndPushNamed(context, Login());
+      Get.offAllNamed(AppRoutes.login);
     } else {
       pageController.animateToPage(
         curentPage,

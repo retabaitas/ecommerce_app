@@ -123,6 +123,12 @@ flutter:
         - asset: assets/fonts/Cairo/Cairo-Regular.ttf
         - asset: assets/fonts/Cairo/Cairo-Bold.ttf
           weight: 700
+    - family: PlayFair_Display
+      fonts:
+        - asset: assets/fonts/PlayFair_Display/PlayfairDisplay-Black.ttf
+          weight: 900
+        - asset: assets/fonts/PlayFair_Display/PlayfairDisplay-SemiBold.ttf
+          weight: 600
   #
   # For details regarding fonts from package dependencies,
   # see https://flutter.dev/custom-fonts/#from-packages

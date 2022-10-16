@@ -4,4 +4,5 @@ class ImageAsset {
   static const String onBoardingimageTow = '$rootImages/onBoardingtow.png';
   static const String onBoardingimageThree = '$rootImages/onBoardingthree.png';
   static const String onBoardingimageFour = '$rootImages/onBoardingfour.png';
+  static const String logoimage = '$rootImages/logo.png';
 }

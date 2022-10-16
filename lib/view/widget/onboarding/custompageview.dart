@@ -19,10 +19,7 @@ class CustomPageView extends GetView<onBoardingControllerImp> {
         children: [
           Text(
             onBordingList[index].title!,
-            style: const TextStyle(
-              fontSize: AppSize.s18,
-              fontWeight: FontWeight.bold,
-            ),
+            style: Theme.of(context).textTheme.headline1,
           ),
           const SizedBox(
             height: AppSize.s40,
@@ -35,10 +32,7 @@ class CustomPageView extends GetView<onBoardingControllerImp> {
           Text(
             onBordingList[index].body!,
             textAlign: TextAlign.center,
-            style: const TextStyle(
-              fontSize: AppSize.s18,
-              height: AppSize.s1_5,
-            ),
+            style: Theme.of(context).textTheme.bodyText1,
           ),
         ],
       ),

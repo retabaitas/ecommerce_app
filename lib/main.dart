@@ -1,3 +1,5 @@
+import 'package:ecommerce_app/core/constant/color.dart';
+import 'package:ecommerce_app/core/constant/value_manager.dart';
 import 'package:ecommerce_app/routes.dart';
 import 'package:ecommerce_app/view/screen/onBoarding.dart';
 import 'package:flutter/material.dart';
@@ -13,7 +15,22 @@ class MyApp extends StatelessWidget {
   Widget build(BuildContext context) {
     return GetMaterialApp(
       debugShowCheckedModeBanner: false,
+      theme: ThemeData(
+        textTheme: const TextTheme(
+          headline1: TextStyle(
+              fontSize: AppSize.s24,
+              fontWeight: FontWeight.bold,
+              color: ColorManager.kblackColor,
+              fontFamily: 'PlayfairDisplay-Bold'),
+          bodyText1: TextStyle(
+              fontSize: AppSize.s18,
+              height: AppSize.s1_5,
+              color: ColorManager.kgreyColor,
+              fontFamily: 'PlayfairDisplay-SemiBold'),
+        ),
+      ),
       title: 'Ecommerce App',
+      // ignore: prefer_const_constructors
       home: OnBoarding(),
       routes: route,
     );
