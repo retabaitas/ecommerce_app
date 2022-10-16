@@ -1,4 +1,5 @@
 import 'package:ecommerce_app/core/constant/color.dart';
+import 'package:ecommerce_app/core/constant/value_manager.dart';
 import 'package:flutter/material.dart';
 
 class CustomBottun extends StatelessWidget {
@@ -9,13 +10,13 @@ class CustomBottun extends StatelessWidget {
   Widget build(BuildContext context) {
     return Container(
       padding: const EdgeInsets.symmetric(
-        horizontal: 100,
-        vertical: 2,
+        horizontal: AppSize.s100,
+        vertical: AppSize.s4,
       ),
       decoration: const BoxDecoration(
         color: ColorManager.kprimaryColor,
         borderRadius: BorderRadius.all(
-          Radius.circular(20),
+          Radius.circular(AppSize.s20),
         ),
       ),
       child: MaterialButton(
@@ -24,7 +25,7 @@ class CustomBottun extends StatelessWidget {
         child: Text(
           text,
           style: const TextStyle(
-            fontSize: 18,
+            fontSize: AppSize.s18,
           ),
         ),
       ),

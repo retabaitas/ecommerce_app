@@ -1,3 +1,4 @@
+import 'package:ecommerce_app/core/constant/value_manager.dart';
 import 'package:ecommerce_app/data/datasource/static/static.dart';
 import 'package:flutter/material.dart';
 
@@ -15,12 +16,12 @@ class CustomListView extends StatelessWidget {
             Text(
               onBordingList[index].title!,
               style: const TextStyle(
-                fontSize: 24,
+                fontSize: AppSize.s18,
                 fontWeight: FontWeight.bold,
               ),
             ),
             const SizedBox(
-              height: 60,
+              height: AppSize.s60,
             ),
             Image.asset(
               onBordingList[index].image!,
@@ -28,13 +29,13 @@ class CustomListView extends StatelessWidget {
               width: 350,
               height: 320,
             ),
-            const SizedBox(height: 20),
+            const SizedBox(height: AppSize.s20),
             Text(
               onBordingList[index].body!,
               textAlign: TextAlign.center,
               style: const TextStyle(
-                fontSize: 18,
-                height: 1.5,
+                fontSize: AppSize.s18,
+                height: AppSize.s1_5,
               ),
             ),
           ],
