@@ -24,7 +24,8 @@ class Login extends StatelessWidget {
                 width: AppSize.s100,
                 height: AppSize.s100,
                 decoration: BoxDecoration(
-                    borderRadius: BorderRadius.circular(AppSize.s60)),
+                  borderRadius: BorderRadius.circular(AppSize.s60),
+                ),
                 child: Image.asset(
                   ImageAsset.logoimage,
                 ),
