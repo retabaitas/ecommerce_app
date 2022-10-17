@@ -22,9 +22,7 @@ class CustomDotController extends StatelessWidget {
               width: controller.curentPage == index ? AppSize.s20 : AppSize.s8,
               height: AppSize.s8,
               decoration: BoxDecoration(
-                color: controller.curentPage == index
-                    ? ColorManager.korangeColor
-                    : ColorManager.kprimaryColor,
+                color: ColorManager.kprimaryColor,
                 borderRadius: BorderRadius.circular(AppSize.s10),
               ),
             ),
