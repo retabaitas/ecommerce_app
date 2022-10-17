@@ -1,12 +1,11 @@
 import 'package:ecommerce_app/core/constant/color.dart';
 import 'package:ecommerce_app/core/constant/value_manager.dart';
+import 'package:ecommerce_app/core/localization/changelocal.dart';
 import 'package:ecommerce_app/core/localization/translation.dart';
 import 'package:ecommerce_app/routes.dart';
 import 'package:ecommerce_app/view/screen/longuage.dart';
-import 'package:ecommerce_app/view/screen/onBoarding.dart';
 import 'package:flutter/material.dart';
-import 'package:get/get_navigation/src/root/get_material_app.dart';
-
+import 'package:get/get.dart';
 import 'core/services/services.dart';
 
 void main() async {
@@ -19,6 +18,7 @@ class MyApp extends StatelessWidget {
   const MyApp({super.key});
   @override
   Widget build(BuildContext context) {
+    LocaleController controller = Get.put(LocaleController());
     return GetMaterialApp(
       translations: MyTranslition(),
       debugShowCheckedModeBanner: false,
@@ -37,8 +37,8 @@ class MyApp extends StatelessWidget {
         ),
       ),
       title: 'Ecommerce App',
-      // ignore: prefer_const_constructors
-      home: MyHomePage(),
+      locale: controller.language,
+      home: const MyHomePage(),
       routes: route,
     );
   }
