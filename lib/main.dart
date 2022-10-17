@@ -9,7 +9,7 @@ import 'package:get/get.dart';
 import 'core/services/services.dart';
 
 void main() async {
-  WidgetsFlutterBinding.ensureInitialized;
+  WidgetsFlutterBinding.ensureInitialized();
   await initialservices();
   runApp(const MyApp());
 }
@@ -38,7 +38,7 @@ class MyApp extends StatelessWidget {
       ),
       title: 'Ecommerce App',
       locale: controller.language,
-      home: const MyHomePage(),
+      home: const MyLanguePage(),
       routes: route,
     );
   }
